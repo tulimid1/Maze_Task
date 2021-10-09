@@ -10,14 +10,26 @@ __Inputs__: number of turns (num_turns), number of blocks / spaces to travel (pa
 
 __Output__: Visualization of maze 
 
-Steps in which a single path maze is randomly generated with this algorthim are as followed:
+> noPath = True
+> while noPath:
+>> Create an array random directions that satisifies num_turns and path_length called *directions*
+>> Randomly choose a starting location, called *agent_position*
+>> for i in *directions*:
+>>> Calculate new position and append to *agent_position*
+>> if *agent_position* overlaps:
+>>> noOverlap = False 
+>>> break 
+>> else:
+>>> noOverlap = True 
+>> if *agent_position* within grid bounds:
+>>> withinBounds = True
+>> else:
+>>> withinBounds = False
+>> if noOverlap and not withinBounds:
+>>> Shift maze position to try to get within bounds 
+>> if noOverlap and withinBounds:
+>>> noPath = False
+>>> Plot maze 
+>>> break
 
-1. The dimensions of the grid in which the maze will be displayed within is created. The X,Y grid dimensions can be changed to any desired size.
-2. The start location of the maze has randomized X and Y-cooridnate locations within the bounds of the grid.
-3. The direction types: north, east, south, west are assigned as variables.
-4. The starting path of the maze was created from the randomized start location and then randomized to indicate which direction the path will start.
-5. The remaining path was generated from the specified input parameters.
-6. The finish location of the maze will be where the last grid unit/blocks/space of the path ends.
-7. If the maze at any points does not meet the parameters, does not stays within the bounds of the grid or the path overlaps, then the maze algorthim will keep generating mazes until all specifications/parameters are met.
-
-Below is the python code within [Google Colab Notebook](https://colab.research.google.com/drive/1hKHnlq2hOVKw1-x4CG4hURgCfPhSdJ1N?usp=sharing):
+Below is the python code within [Google Colab Notebook](https://colab.research.google.com/drive/1hKHnlq2hOVKw1-x4CG4hURgCfPhSdJ1N?usp=sharing).
