@@ -1,30 +1,14 @@
 # Maze Generation Algorithm Documentation 
 
-This repository holds the code used to generate single path randomized mazes based off two important parameters: number of turns and path length. The code has been provided in both MATLAB and Python. 
+This repository holds the code used to generate single path randomized mazes based off two important parameters: number of turns and path length. The code has been provided in MATLAB and Python. 
 
 In general, the maze algorithm utilizes two functions: (From MATLAB code)
 
 Generate Maze function 
 
-__Inputs__: 
-- num_turns: number of turns
-- path_length: number of blocks/ spaces to travel
-- gridX: x maximum 
-- gridY: Y maximum
-- maxIter: maximum number of iterations
+__Inputs__: number of turns (num_turns), number of blocks / spaces to travel (path_length), x maximum (gridX), Y maximum (gridY), and maximum number of iterations (maxIter)
 
-__Outputs__: 
-- visualization of random maze
-
-Random Choice function
-- Randomly choose 1 value from array with weights q (pseudo-unifrom)
-
-__Inputs__: 
-- array: array of values [ N X 1]
-- w: weights [ N X 1]
-
-__Outputs__: 
-- choice: element from array
+__Output__: Visualization of maze 
 
 Steps in which a single path maze is randomly generated with this algorthim are as followed:
 
@@ -36,6 +20,4 @@ Steps in which a single path maze is randomly generated with this algorthim are 
 6. The finish location of the maze will be where the last grid unit/blocks/space of the path ends.
 7. If the maze at any points does not meet the parameters, does not stays within the bounds of the grid or the path overlaps, then the maze algorthim will keep generating mazes until all specifications/parameters are met.
 
-Below is the python code within google colab notebook:
-
-An example of linking [google colab notebook](https://colab.research.google.com/drive/1hKHnlq2hOVKw1-x4CG4hURgCfPhSdJ1N?usp=sharing) in the markdown file. 
+Below is the python code within [Google Colab Notebook](https://colab.research.google.com/drive/1hKHnlq2hOVKw1-x4CG4hURgCfPhSdJ1N?usp=sharing):
