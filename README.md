@@ -2,9 +2,7 @@
 
 This repository holds the code used to generate single path randomized mazes based off two important parameters: number of turns and path length. The code has been provided in MATLAB and Python. 
 
-In general, the maze algorithm utilizes two functions: (From MATLAB code)
-
-Generate Maze function 
+The algorithm is as follows:
 
 __Inputs__: number of turns (num_turns), number of blocks / spaces to travel (path_length), x maximum (gridX), Y maximum (gridY), and maximum number of iterations (maxIter)
 
