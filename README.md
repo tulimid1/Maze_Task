@@ -50,7 +50,5 @@ __Output__: Visualization of maze
 >>> 
 >>> Plot maze 
 >>> 
->>> break
->>> 
 
 Below is the python code within [Google Colab Notebook](https://colab.research.google.com/drive/1hKHnlq2hOVKw1-x4CG4hURgCfPhSdJ1N?usp=sharing).
