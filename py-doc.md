@@ -15,7 +15,7 @@ Generate a random maze. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Ma
 
 [mg.genMaze(numTurns, pathLength)](#a)
 
-[mg.genMaze(numTurns, pathLength, Name=Value](#b)
+[mg.genMaze(numTurns, pathLength, Name=Value)](#b)
 
 ## Description
 ---
