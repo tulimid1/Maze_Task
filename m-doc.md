@@ -33,7 +33,7 @@ Generate a general maze
     path_length = 10; 
     genMaze(num_turns, path_length)
     
-![gen](/assets/gen.png)
+![gen](/assets/genM.png)
     
 ### More complicated maze with more iterations
 Generate a maze that has only one more length than it does turns, 
@@ -42,7 +42,7 @@ Generate a maze that has only one more length than it does turns,
     path_length=16;
     genMaze(num_turns, path_length, 'maxIter',1e3)
     
-![comp](/assets/comp.png)
+![comp](/assets/compM.png)
 
 ### Maze that isn't a square
 Generate a maze that doesn't have the same size width and height.
@@ -52,7 +52,7 @@ Generate a maze that doesn't have the same size width and height.
     gridX = 15;
     genMaze(num_turns, path_length, 'gridX',gridX)
     
-![rect](/assets/rect.png)
+![rect](/assets/rectM.png)
 
 ## Input Arguments
 ---
