@@ -21,7 +21,7 @@ Generate a maze with given parameters. See [MazeAlgo_main.mlx](https://github.co
 genMaze([num_turns](#num_turns), [path_length](#path_length)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
 
 ### B
-genMaze([num_turns](#num_turns), [path_length](#path_length), [Name, Value](#name-value-arguments) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
+genMaze([num_turns](#num_turns), [path_length](#path_length), [Name, Value)](#name-value-arguments) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
 
 ## Examples 
 ---
