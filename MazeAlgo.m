@@ -2,22 +2,20 @@
 
 number_of_turns = 6;
 length_of_path = 15;
-gridX = 10; 
-gridY = 10;
-maxIter = 350;
 
-genMaze(number_of_turns, length_of_path, gridX, gridY, maxIter); 
+genMaze(number_of_turns, length_of_path); 
 
 
 %% Function 
 
-function genMaze(num_turns, path_length, gridX, gridY, maxIter)
+function genMaze(num_turns, path_length, varargin)
 %{
 Generate random maze 
 
 INPUTS:
 num_turns: # of turns 
 path_length: # of blocks / spaces to travel 
+varargin: 
 gridX: x maximum
 gridY: y maximum
 maxIter: maximum number of iterations
@@ -32,13 +30,19 @@ arguments
         mustBeInteger, mustBeNumeric, mustBeNonempty}
     path_length (1,1) {mustBePositive, mustBeFinite, mustBeReal, ...
         mustBeInteger, mustBeNumeric, mustBeNonempty}
-    gridX (1,1) {mustBePositive, mustBeFinite, mustBeReal, ...
-        mustBeInteger, mustBeNumeric, mustBeNonempty}
-    gridY (1,1) {mustBePositive, mustBeFinite, mustBeReal, ...
-        mustBeInteger, mustBeNumeric, mustBeNonempty}
-    maxIter (1,1) {mustBePositive, mustBeFinite, mustBeReal, ...
-        mustBeInteger, mustBeNumeric, mustBeNonempty}
 end
+arguments (Repeating)
+    varargin
+end
+
+%% parse 
+parsed = inputParser();
+addRequired(parsed, 'num_turns', @(x) isscalar(x) & isnumeric(x)); 
+addRequired(parsed, 'path_length', @(x) isscalar(x) & isnumeric(x)); 
+addOptional(parsed, 'gridX', 10, @(x) isscalar(x) & isnumeric(x) ); 
+addOptional(parsed, 'gridY', 10, @(x) isscalar(x) & isnumeric(x)); 
+addOptional(parsed, 'maxIter', 500, @(x) isscalar(x) & isnumeric(x)); 
+parse(parsed, num_turns, path_length, varargin{:}); 
 
 %% Create grid
 is_new_path_good = false;
@@ -47,12 +51,12 @@ while (is_new_path_good == false)
 close all;
 
 % Create a 10 by 10 grid
-xgrid = 0:1:gridX;
-ygrid = 0:1:gridY;
+xgrid = 0:1:parsed.Results.gridX;
+ygrid = 0:1:parsed.Results.gridY;
 
 % Initiate random start location 
-startX = randi([1 gridX-1]); 
-startY = randi([1 gridY-1]); 
+startX = randi([1 parsed.Results.gridX-1]); 
+startY = randi([1 parsed.Results.gridY-1]); 
 start_current_position = [startX, startY]; 
 
 % display 10 by 10 grid
@@ -191,7 +195,7 @@ for i = 1:length(c)
                 is_new_path_good = true;
             end
 
-            if currentIter == maxIter
+            if currentIter == parsed.Results.maxIter
                 fprintf('Algorithm did not converege. Try again.\n')
                 return
             end 
@@ -253,7 +257,7 @@ rectangle('Position',[new_path_dirc,1,1], 'FaceColor','b');
                 is_new_path_good = true;
             end 
             
-            if currentIter == maxIter
+            if currentIter == parsed.Results.maxIter
              fprintf('Algorithm did not converge. Try Aagin.\n')  
              return
             end
@@ -294,7 +298,7 @@ if c(i) == 1 && i == Max_lengths
             is_new_path_good = true;
             fprintf('Algorithm converged.\n') 
         end
-        if currentIter == maxIter
+        if currentIter == parsed.Results.maxIter
           fprintf('Algorithm did not converge. Try again.\nConsider either increasing grid area, increasing maximum number of iterations, decreasing number of turns, or decreasing path length.')
                 return
         end
