@@ -37,8 +37,8 @@ end
 
 %% parse 
 parsed = inputParser();
-addRequired(parsed, 'num_turns', @(x) isscalar(x) & isnumeric(x)); 
-addRequired(parsed, 'path_length', @(x) isscalar(x) & isnumeric(x)); 
+addRequired(parsed, 'num_turns'); 
+addRequired(parsed, 'path_length'); 
 addOptional(parsed, 'gridX', 10, @(x) isscalar(x) & isnumeric(x) ); 
 addOptional(parsed, 'gridY', 10, @(x) isscalar(x) & isnumeric(x)); 
 addOptional(parsed, 'maxIter', 500, @(x) isscalar(x) & isnumeric(x)); 
