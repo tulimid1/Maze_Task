@@ -7,27 +7,27 @@ permalink: /Python/
 # testP 
 ---
 
-Blah function. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.ipynb) for a notebook of given examples. 
+Generate a random maze. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.ipynb) for a notebook of given examples. 
 
 ## Syntax
 ---
 
-[GenerateAndTest(xMax](#a)
+[GenerateAndTest(numTurns, pathLength)](#a)
 
-[outarg = b.blah(inarg1, inarg2, Name=Value)](#b)
+[GenerateAndTest(numTurns, pathLength, Name=Value](#b)
 
 ## Description
 ---
 ### A
-[outarg](#outarg) = b.blah([inarg1](#inarg1), [inarg2](#inarg2)) returns blah. [example](#example1)
+GenerateAndTest([numTurns](#numturns), [pathLength](#pathLength)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
 
 ### B 
-[outarg](#outarg) = b.blah([inarg1](#inarg1), [inarg2](#inarg2), [Name=Value](#name-value-arguments)) returns blah with additional options specified by one or more name-value pair arguments. For example, you can do this or that. [example](#example2)
+GenerateAndTest([numTurns](#numturns), [pathLength](#pathLength), [Name=Value](#name-value-arguments)) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
 
 ## Examples 
 ---
-### Example1
-Description
+### General maze
+Generate a general maze
 
     code
 
@@ -35,56 +35,50 @@ More description
 
     code
 
-### Example2
-Description
+### More complicated maze with more iterations
 
-    code
-
-More description
-
-    more code
+### Maze that isn't a square
 
 ## Input Arguments
 ---
-### inarg1
-Simple description
+### ```numTurns```
+Number of turns.
 
-More detailed description
+Number of non-overlapping turns the maze should have. 
 
-Data Types: 
+Data Types: double | scalar
 
-### inarg2
-Simple description
+### ```pathLength```
+Length of the path.
 
-More detailed description 
+The number of blocks the maze shoudl go across. 
 
-Data Types: 
+Data Types: double | scalar
 
 ### Name-Value Arguments
 
 Specified optional pairs of ```Name=Value``` arguments. ```Name``` is the is the argument name and ```Value``` is the corresponding value. You can specify several name and value pair arguments in any order as ```Name1=Value1,...,NameN=ValueN```. 
 
-**Example**: ```name1=val1, name2=val2``` specifies blah blah blah.  
+**Example**: ```gridX=15, maxIter=500``` specifies a maze with 15 columns and 500 iterations to try to converge. 
 
-### ```name1```
-Simple description (```'option1'``` (default), ```'option2'```, ```'option3'```). 
+### ```gridX```
+Number of blocks on x-dimension. 
 
-Longer description. 
-* ```'option1'``` - Option1 description
-* ```'option2'``` - Option2 description
-* ```'option3'``` - Option3 description
+How many blocks wide. 
 
-### ```name2```
-Simple description (Value (default) | class). 
+Data Types: double | scalar
 
-More detailed description
+### ```gridY```
+Number of blocks on y-dimension. 
 
-## Output Arguments
----
-### ```outarg1```
-Simple description
+How many blocks wide. 
 
-More detailed description 
+Data Types: double | scalar
+
+### ```maxIter```
+Maximum iterations to test.
+
+How many attempts to make a maze with given parameters. This may need to be increased for more complicated mazes. 
 
 ## More About 
 ---
