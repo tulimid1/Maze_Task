@@ -121,19 +121,19 @@ def checkBounds(agent_position, xMin, xMax, yMin, yMax):
         
     return withinBounds
 
-def GenerateAndTest(xMax, yMax, numTurns, pathLength, xMin=0, yMin=0, maxIter=250):
+def GenerateAndTest(numTurns, pathLength, xMax=10, yMax=10, xMin=0, yMin=0, maxIter=250):
     '''
 
     Parameters
     ----------
-    xMax : int
-        maximum x value.
-    yMax : int
-        maximum maximum y value.
     numTurns : int
         number of turns for maze.
     pathLength : int
         number of blocks maze traverses.
+    xMax : int, optional
+        maximum x value. The default is 10.
+    yMax : int, optional
+        maximum maximum y value. The default is 10. 
     xMin : int, optional
         minimum x value. The default is 0.
     yMin : int, optional
