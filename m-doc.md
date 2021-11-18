@@ -28,17 +28,30 @@ genMaze([num_turns](#num_turns), [path_length](#path_length), [Name, Value](#nam
 ### General maze
 Generate a general maze 
 
-    Some code
-
-More text
-
-    more code
+    num_turns = 5;
+    path_length = 10; 
+    genMaze(num_turns, path_length)
+    
+<img src="gen.png" width=400 height="350"/>
     
 ### More complicated maze with more iterations
+Generate a maze that has only one more length than it does turns, 
+
+    num_turns = 15;
+    path_length=16;
+    genMaze(num_turns, path_length, 'maxIter',1e3)
+    
+<img src="comp.png" width=400 height="350"/>
 
 ### Maze that isn't a square
+Generate a maze that doesn't have the same size width and height.
 
-
+    num_turns = 5;
+    path_length=10;
+    gridX = 15;
+    genMaze(num_turns, path_length, 'gridX',gridX)
+    
+<img src="rect.png" width=400 height="350"/>
 
 ## Input Arguments
 ---
@@ -79,7 +92,7 @@ Data Types: double | scalar
 ### ```maxIter```
 Maximum iterations to test
 
-How many attempts to make a maze with given parameters. These may need to be increased for more complicated mazes. 
+How many attempts to make a maze with given parameters. This may need to be increased for more complicated mazes. 
 
 ## More About 
 ---
