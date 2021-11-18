@@ -5,12 +5,12 @@ Simple overall description. See [blah_main.mlx](https://link_to_blah_function.co
 
 ## Syntax
 ---
-[outarg1 = blah(inarg1, inarg2)](#a)
+[outarg = blah(inarg1, inarg2)](#a)
 
 ## Description
 ---
 ### A
-[outarg1](#outarg1) = blah([inarg1](#inarg1), [inarg2](#inarg2)) returns the p-value for a two-sided permutation test on data1 and data2. [example](#example-1)
+[outarg](#outarg) = blah([inarg1](#inarg1), [inarg2](#inarg2)) returns the p-value for a two-sided permutation test on data1 and data2. [example](#example-1)
 
 ## Examples 
 ---
