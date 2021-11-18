@@ -5,7 +5,7 @@ permalink: /MATLAB/
 categories: media
 ---
 
-# genMaze 
+# [genMaze](https://github.com/tulimid1/Maze_Task/blob/main/genMaze.m) 
 ---
 
 Generate a maze with given parameters. See [MazeAlgo_main.mlx](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.mlx) for a notebook of given examples. 
