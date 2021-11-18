@@ -1,4 +1,4 @@
-title: "Duncan Tulimieri"
+title: "Maze Task"
 author: "Duncan Tulimieri"
 description: "University of Delaware"
 
@@ -18,9 +18,8 @@ minimal: false             # use a dark header
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "readME.md"}
-  - {file: "research.md"}
-  - {file: "publications.md"}
-  - {file: "CV.md"}
+  - {file: "m-doc.md"}
+  - {file: "py-doc.md"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:tulimid@udel.edu"}
