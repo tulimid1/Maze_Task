@@ -92,14 +92,14 @@ Number of turns.
 
 Number of non-overlapping turns the maze should have. 
 
-Data Types: double | scalar
+Data Types: (double | scalar)
 
 ### ```pathLength```
 Length of the path.
 
 The number of blocks the maze shoudl go across. 
 
-Data Types: double | scalar
+Data Types: (double | scalar)
 
 ### Name-Value Arguments
 
@@ -112,14 +112,14 @@ Number of blocks on x-dimension.
 
 How many blocks wide. 
 
-Data Types: double | scalar
+Data Types: (double | scalar)
 
 ### ```gridY```
 Number of blocks on y-dimension. 
 
 How many blocks wide. 
 
-Data Types: double | scalar
+Data Types: (double | scalar)
 
 ### ```maxIter```
 Maximum iterations to test.
