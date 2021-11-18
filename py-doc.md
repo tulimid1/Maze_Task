@@ -35,6 +35,7 @@ Generate a general maze
     mg.genMaze(numTurns=numTurns, pathLength=pathLength)
 
 ![gen](/assets/genPy.png)
+
 Algorithm converged.
 
 Number of turns: 5
@@ -53,6 +54,7 @@ Generate a maze that has only one more length than it does turns.
     mg.genMaze(numTurns=numTurns, pathLength=pathLength, maxIter=1000)
     
 ![comp](/assets/compPy.png)
+
 Algorithm converged.
 
 Number of turns: 15
@@ -72,6 +74,7 @@ Generate a maze that doesn't have the same size width and height.
     mg.genMaze(numTurns=numTurns, pathLength=pathLength, xMax=gridX)
     
 ![rect](/assets/rectPy.png)
+
 Algorithm converged.
 
 Number of turns: 5
