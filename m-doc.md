@@ -52,7 +52,7 @@ Generate a maze that doesn't have the same size width and height.
     gridX = 15;
     genMaze(num_turns, path_length, 'gridX',gridX)
     
-![rect](/assests/rect.png)
+![rect](/assets/rect.png)
 
 ## Input Arguments
 ---
