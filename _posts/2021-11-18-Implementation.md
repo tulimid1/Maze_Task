@@ -1,6 +1,6 @@
 ---
 title: "Implementation"
-page: post 
+layout: post 
 ---
 
 # Implementation
