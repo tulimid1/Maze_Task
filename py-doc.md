@@ -11,7 +11,7 @@ Generate a random maze. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Ma
 
 ## Syntax
 ---
-import MazeGen as mg
+    import MazeGen as mg
 
 [mg.genMaze(numTurns, pathLength)](#a)
 
