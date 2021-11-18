@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "MATLAB"
+<!-- title: "MATLAB" -->
 permalink: /MATLAB/
 ---
 
