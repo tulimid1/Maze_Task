@@ -33,7 +33,7 @@ Generate a general maze
     path_length = 10; 
     genMaze(num_turns, path_length)
     
-<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/assets/gen.png" width=400 height="350"/>
+<img src="/assets/gen.png" width=400 height="350"/>
     
 ### More complicated maze with more iterations
 Generate a maze that has only one more length than it does turns, 
