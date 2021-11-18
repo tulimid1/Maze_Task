@@ -32,8 +32,8 @@ comments:
 #  disqus_shortname: ""    # see https://disqus.com/
 #  isso_domain: ""         # see https://posativ.org/isso/
 
-# plugins:
-#  - jekyll-feed
+plugins:
+ - jekyll-feed
 
 
 theme: jekyll-theme-hacker
