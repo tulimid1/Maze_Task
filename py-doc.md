@@ -4,40 +4,73 @@ title: Python
 permalink: /Python/
 ---
 
-# GenerateAndTest
+# genMaze
 ---
 
 Generate a random maze. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.ipynb) for a notebook of given examples. 
 
 ## Syntax
 ---
+import MazeGen as mg
 
-[GenerateAndTest(numTurns, pathLength)](#a)
+[mg.genMaze(numTurns, pathLength)](#a)
 
-[GenerateAndTest(numTurns, pathLength, Name=Value](#b)
+[mg.genMaze(numTurns, pathLength, Name=Value](#b)
 
 ## Description
 ---
 ### A
-GenerateAndTest([numTurns](#numturns), [pathLength](#pathlength)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
+mg.genMaze([numTurns](#numturns), [pathLength](#pathlength)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
 
 ### B 
-GenerateAndTest([numTurns](#numturns), [pathLength](#pathlength), [Name=Value](#name-value-arguments)) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
+mg.genMaze([numTurns](#numturns), [pathLength](#pathlength), [Name=Value](#name-value-arguments)) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
 
 ## Examples 
 ---
 ### General maze
 Generate a general maze
 
-    code
+    numTurns = 5
+    pathLength=10
+    mg.genMaze(numTurns=numTurns, pathLength=pathLength)
 
-More description 
+![gen](/assets/genPy.png)
 
-    code
+Algorithm converged.
+Number of turns: 5
+Path length: 10
+Number of iterations: 1
+Execution time: 0.16 seconds
 
 ### More complicated maze with more iterations
+Generate a maze that has only one more length than it does turns.
+
+    numTurns=15
+    pathLength=16
+    mg.genMaze(numTurns=numTurns, pathLength=pathLength, maxIter=1000)
+    
+![comp](/assets/compPy.png)
+
+Algorithm converged.
+Number of turns: 15
+Path length: 16
+Number of iterations: 16
+Execution time: 2.60 seconds
 
 ### Maze that isn't a square
+Generate a maze that doesn't have the same size width and height.
+
+    numTurns=5
+    pathLength = 10
+    gridX=15
+    mg.genMaze(numTurns=numTurns, pathLength=pathLength, xMax=gridX)
+    
+![rect](/assets/rectPy.png)
+Algorithm converged.
+Number of turns: 5
+Path length: 10
+Number of iterations: 1
+Execution time: 0.31 seconds
 
 ## Input Arguments
 ---
