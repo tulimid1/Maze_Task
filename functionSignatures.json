@@ -1,0 +1,14 @@
+{
+    "_schemaVersion": "1.0.0",
+    "genMaze":
+    {
+       "inputs":
+       [
+          {"name":"num_turns", "kind":"required", "type":["numeric"], "purpose":"Number of turns"},
+          {"name":"path_length", "kind":"required", "type":["numeric"], "purpose":"Length of path"}, 
+          {"name":"gridX", "kind":"namevalue", "type":["numeric", "scalar"],"purpose":"Number of blocks for x-dim (default=10)"},
+          {"name":"gridY", "kind":"namevalue", "type":["numeric", "scalar"],"purpose":"Number of blocks for y-dim (default=10)"},
+          {"name":"maxIter", "kind":"namevalue", "type":["numeric", "scalar"],"purpose":"Number of iterations (default=500)"}
+       ]
+    }
+}
