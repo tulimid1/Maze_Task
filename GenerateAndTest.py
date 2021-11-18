@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-# Maze Generation Algorithm 
-
-# %% Import libraries 
-import os 
-import matplotlib.pyplot as plt
-import numpy as np 
-import time 
-
 # %% Functions 
 # make path 
 def makeMaze(num_turns, path_length):
@@ -229,11 +218,3 @@ def GenerateAndTest(xMax, yMax, numTurns, pathLength, xMin=0, yMin=0, maxIter=25
             # print(f'Algorithm did not converge within {maxIter:d} iterations. ')
             break
 
-# %% Algorithm          
-
-# Hyperparameters
-xmin, xmax, ymin, ymax = 0, 10, 0, 10
-number_of_turns, length_of_path = 5, 15
-maximum_iterations = 500
-
-GenerateAndTest(xmax, ymax, number_of_turns, length_of_path)
