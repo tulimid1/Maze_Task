@@ -4,7 +4,7 @@ title: Python
 permalink: /Python/
 ---
 
-# testP 
+# GenerateAndTest
 ---
 
 Generate a random maze. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.ipynb) for a notebook of given examples. 
