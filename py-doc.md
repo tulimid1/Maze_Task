@@ -7,13 +7,12 @@ permalink: /Python/
 # testP 
 ---
 
-Blah function. See [blah_main.ipynb](https://link_to_.ipynb) for a notebook of given examples. 
+Blah function. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.ipynb) for a notebook of given examples. 
 
 ## Syntax
 ---
-import blah as b
 
-[outarg = b.blah(inarg1, inarg2)](#a)
+[GenerateAndTest(xMax](#a)
 
 [outarg = b.blah(inarg1, inarg2, Name=Value)](#b)
 
