@@ -19,10 +19,10 @@ Generate a random maze. See [MazeAlgo_main.ipynb](https://github.com/tulimid1/Ma
 ## Description
 ---
 ### A
-GenerateAndTest([numTurns](#numturns), [pathLength](#pathLength)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
+GenerateAndTest([numTurns](#numturns), [pathLength](#pathlength)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
 
 ### B 
-GenerateAndTest([numTurns](#numturns), [pathLength](#pathLength), [Name=Value](#name-value-arguments)) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
+GenerateAndTest([numTurns](#numturns), [pathLength](#pathlength), [Name=Value](#name-value-arguments)) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
 
 ## Examples 
 ---
