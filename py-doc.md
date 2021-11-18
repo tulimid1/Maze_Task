@@ -35,11 +35,14 @@ Generate a general maze
     mg.genMaze(numTurns=numTurns, pathLength=pathLength)
 
 ![gen](/assets/genPy.png)
-
 Algorithm converged.
+
 Number of turns: 5
+
 Path length: 10
+
 Number of iterations: 1
+
 Execution time: 0.16 seconds
 
 ### More complicated maze with more iterations
@@ -50,11 +53,14 @@ Generate a maze that has only one more length than it does turns.
     mg.genMaze(numTurns=numTurns, pathLength=pathLength, maxIter=1000)
     
 ![comp](/assets/compPy.png)
-
 Algorithm converged.
+
 Number of turns: 15
+
 Path length: 16
+
 Number of iterations: 16
+
 Execution time: 2.60 seconds
 
 ### Maze that isn't a square
@@ -67,9 +73,13 @@ Generate a maze that doesn't have the same size width and height.
     
 ![rect](/assets/rectPy.png)
 Algorithm converged.
+
 Number of turns: 5
+
 Path length: 10
+
 Number of iterations: 1
+
 Execution time: 0.31 seconds
 
 ## Input Arguments
