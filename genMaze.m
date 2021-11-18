@@ -1,13 +1,3 @@
-%% Call function 
-
-number_of_turns = 6;
-length_of_path = 15;
-
-genMaze(number_of_turns, length_of_path); 
-
-
-%% Function 
-
 function genMaze(num_turns, path_length, varargin)
 %{
 Generate random maze 
