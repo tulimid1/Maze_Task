@@ -2,6 +2,7 @@
 layout: page
 title: MATLAB
 permalink: /MATLAB/
+categories: media
 ---
 
 # genMaze 
