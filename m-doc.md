@@ -4,70 +4,82 @@ title: MATLAB
 permalink: /MATLAB/
 ---
 
-# testP 
+# genMaze 
 ---
 
-Simple overall description. See [blah_main.mlx](https://link_to_blah_function.com) for a notebook of given examples. 
+Generate a maze with given parameters. See [MazeAlgo_main.mlx](https://github.com/tulimid1/Maze_Task/blob/main/MazeAlgo_main.mlx) for a notebook of given examples. 
 
 ## Syntax
 ---
-[outarg = blah(inarg1, inarg2)](#a)
+[genMaze(num_turns, path_length)](#a)
+
+[genMaze(num_turns, path_length, Name, Value)](#b)
 
 ## Description
 ---
 ### A
-[outarg](#outarg) = blah([inarg1](#inarg1), [inarg2](#inarg2)) returns the p-value for a two-sided permutation test on data1 and data2. [example](#example-1)
+genMaze([num_turns](#num_turns), [path_length](#path_length)) returns a random maze with specified number of turns and path length in a 10x10 space. [example](#general-maze)
+
+### B
+genMaze([num_turns](#num_turns), [path_length](#path_length), [Name, Value](#name-value-arguments) returns a random maze with additional options specified by one or more name-value pair arguments. For example, you can change the number of iterations or size of grid. [example](#more-complicated-maze-with-more-iterations)
 
 ## Examples 
 ---
-### Example 1 
-some text
+### General maze
+Generate a general maze 
 
     Some code
 
 More text
 
     more code
+    
+### More complicated maze with more iterations
+
+### Maze that isn't a square
+
+
 
 ## Input Arguments
 ---
-### ```inarg1```
-Simple description
+### ```num_turns```
+Number of turns
 
-Description
+Number of non-overlapping turns the maze should have. 
 
-Data Types: 
+Data Types: double | scalar
 
-### ```inarg2```
-Simple description
+### ```path_length```
+Length of the path.
 
-Description
+The number of the blocks the maze should go across. 
 
-Data Types: 
+Data Types: double | scalar
+
 ### Name-Value Arguments
 
 Specified optional comma-separated pairs of ```Name,Value``` arguments. ```Name``` is the is the argument name and ```Value``` is the corresponding value. ```Name``` musta ppear inside single or double quotes. You can specify several name and value pair arguments in any order as ```Name1,Value1,...,NameN,ValueN```. 
 
-**Example**: ```'name1', value1, 'name2', value2``` specifies blah blah blah.
+**Example**: ```'gridX', 15, 'maxIter', 500``` specifies a maze with 15 columns and 500 iterations to try to converge.
 
-### ```namevalue1```
-Descriptoin
+### ```gridX```
+Number of blocks on x-dimension. 
 
-Descriptions of options
-* ```'option1'``` - Description
-* ```'option2'``` - Description
-* ```'option3'``` - Description
+How many blocks for wide. 
 
-### ```namevalue2```
-Description
+Data Types: double | scalar
 
-### ```name-value3```
-Description
+### ```gridY```
+Number of blocks on y-dimension.
 
-## Output Arguments
----
-### ```outarg```
-Description
+How many blocks tall. 
+
+Data Types: double | scalar
+
+### ```maxIter```
+Maximum iterations to test
+
+How many attempts to make a maze with given parameters. These may need to be increased for more complicated mazes. 
 
 ## More About 
 ---
