@@ -33,7 +33,7 @@ Generate a general maze
     path_length = 10; 
     genMaze(num_turns, path_length)
     
-<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/gen.png" width=400 height="350"/>
+<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/assets/gen.png" width=400 height="350"/>
     
 ### More complicated maze with more iterations
 Generate a maze that has only one more length than it does turns, 
@@ -42,7 +42,7 @@ Generate a maze that has only one more length than it does turns,
     path_length=16;
     genMaze(num_turns, path_length, 'maxIter',1e3)
     
-<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/comp.png" width=400 height="350"/>
+<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/assets/comp.png" width=400 height="350"/>
 
 ### Maze that isn't a square
 Generate a maze that doesn't have the same size width and height.
@@ -52,7 +52,7 @@ Generate a maze that doesn't have the same size width and height.
     gridX = 15;
     genMaze(num_turns, path_length, 'gridX',gridX)
     
-<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/rect.png" width=400 height="350"/>
+<img src="https://github.com/tulimid1/Maze_Task/blob/gh-pages/assets/rect.png" width=400 height="350"/>
 
 ## Input Arguments
 ---
