@@ -1,6 +1,6 @@
 # Maze Generation Algorithm Documentation 
 
-This repository holds the code used to generate single path randomized mazes based off two important parameters: number of turns and path length. The code has been provided in MATLAB and Python. 
+This repository holds the code used to generate single path randomized mazes based off two important parameters: number of turns and path length. The code has been provided in MATLAB and Python. [Documentation](https://tulimid1.github.io/Maze_Task/)
 
 The algorithm is as follows:
 
