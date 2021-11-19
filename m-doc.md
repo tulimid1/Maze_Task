@@ -101,3 +101,9 @@ How many attempts to make a maze with given parameters. This may need to be incr
 ## Tips 
 ---
 
+## Issues and Discussion 
+---
+
+[Issues](https://github.com/tulimid1/Maze_Task/issues) and [Discussion](https://github.com/tulimid1/Maze_Task/discussions).
+
+If you don't know how to use github (or don't want to), just send me an [email](mailto:tulimid@udel.edu). 
