@@ -101,6 +101,10 @@ How many attempts to make a maze with given parameters. This may need to be incr
 ## Tips 
 ---
 
+I would suggest adding both `genMaze.m` and `functionSignatures.json` to a folder that is in your MATLAB path. The `genMaze.m` contains the function and the `functionSignatures.json` will you give custom suggestions and code completion for when you call `genMaze` in a script or notebook. 
+
+If you already have a `functionSignatures.json` file in your folder, just add the pertinent code to the original `functionSignatures.json`. 
+
 ## Issues and Discussion 
 ---
 
